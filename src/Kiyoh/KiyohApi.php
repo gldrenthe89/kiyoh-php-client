@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiyoh;
+namespace gldrenthe89\KiyoPhpClient\Kiyoh\Kiyoh;
 
 class KiyohApi
 {
