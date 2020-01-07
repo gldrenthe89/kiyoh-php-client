@@ -1,3 +1,5 @@
+Currently only supported functions are shown below;
+
 ## Installation
 
 You can install the library via composer:
