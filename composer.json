@@ -1,0 +1,28 @@
+{
+    "name": "gldrenthe89/kiyoh-php-client",
+    "description": "PHP Library for connecting to Kiyoh or Klantenvertellen API End Point",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+      "kiyoh",
+      "Klantenvertellen",
+      "php",
+      "client"
+    ],
+    "authors": [
+        {
+            "name": "Geert Lucas Drenthe",
+            "email": "gl@drenthe.it",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Kiyoh": "src/"
+        }
+    }
+}
