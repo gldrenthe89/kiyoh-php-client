@@ -27,7 +27,7 @@ class KiyohApi
      */
     public function getGroupStatistics() {
         $fullUrl = 'https://'.$this->baseUrl.'/v1/publication/review/external/group/statistics';
-        return $this->apiGetCall($fullUrl)[0];
+        return $this->apiCall($fullUrl)[0];
     }
 
     /**
@@ -38,7 +38,7 @@ class KiyohApi
      */
     public function getLocationStatistics(int $locationId) {
         $fullUrl = 'https://'.$this->baseUrl.'/v1/publication/review/external/location/statistics?locationId='.$locationId;
-        return $this->apiGetCall($fullUrl);
+        return $this->apiCall($fullUrl);
     }
 
     /**
