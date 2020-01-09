@@ -22,7 +22,7 @@ For group statistics use:
 
 ```php
 $baseUrl    = string // www.kiyoh.com or www.Klantenvertellen.nl';
-$apiKey     = string // provided by accountmanager form Kiyoh;
+$apiKey     = string // provided by accountmanager from Kiyoh;
 $apiCall    = new KiyohApi($baseUrl, $apiKey);
 $response   = $apiCall->getGroupStatistics();
 ```
@@ -31,7 +31,7 @@ For a per location statistics use:
 
 ```php
 $baseUrl    = string  // www.kiyoh.com or www.Klantenvertellen.nl'.
-$apiKey     = string  // provided by accountmanager form Kiyoh.
+$apiKey     = string  // provided by accountmanager from Kiyoh.
 $locationId = integer // provided by accountmanager from Kiyoh of found in respective group dashboard.
 $apiCall    = new KiyohApi($baseUrl, $apiKey);
 $response   = $apiCall->getLocationStatistics($locationId);
