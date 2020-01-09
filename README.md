@@ -37,6 +37,24 @@ $apiCall    = new KiyohApi($baseUrl, $apiKey);
 $response   = $apiCall->getLocationStatistics($locationId);
 ```
 
+Send a review invite:
+when response has error exception is thrown.
+```php
+$baseUrl            =   string // www.kiyoh.com or www.Klantenvertellen.nl';
+$inviteApiKey       =   string // API key (token) to authorize the request, found in respective group dashboard;
+$params             =   [
+    'location_id'       =>      integer   // ID for the location for which the invite should be sent,
+    'invite_email'      =>      string    // email address that should receive the invite,
+    'delay'             =>      integer   // number of days after which the email should be sent. 0 is immediately,
+    'first_name'        =>      string    // name fields to personalize the invite,
+    'last_name'         =>      string    // name fields to personalize the invite,
+    'language'          =>      string    // language the invite email is sent, “nl” for Dutch (case sensitive)
+    'ref_code'          =>      string    // internal reference code which can be used for administration purposes (the reference code is visible in invite history, review exports and XML feed)
+];
+$apiCall            =   new KiyohApi($baseUrl, $inviteApiKey);
+$response           =   $apiCall->sendReviewInviteJson($params);
+```
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](LICENSE.md).
