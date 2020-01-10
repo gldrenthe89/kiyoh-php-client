@@ -57,4 +57,4 @@ $response           =   $apiCall->sendReviewInviteJson($params);
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](LICENSE.md).
+The Kiyoh PHP Client is open-sourced software licensed under the [MIT license](LICENSE.md).
